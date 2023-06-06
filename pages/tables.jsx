@@ -4,13 +4,11 @@ import Table from '../app/Components/table'
 import Link from 'next/link'
 import Footer from "../app/Components/footer.jsx";
 import Nav from "../app/Components/nav.jsx";
-import SideNav from '../app/Components/sidenav.jsx'
 
 const tables = () => {
   return (
     <div className="sb-nav-fixed">
       <Nav/>
-      <SideNav/>
       <div id="layoutSidenav">
         <div id="layoutSidenav_content">
           <main>

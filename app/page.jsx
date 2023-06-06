@@ -1,12 +1,11 @@
-
-
+"use client";
+import { useState } from "react";
 import Table from "./Components/table.jsx";
 import ChartBarComponent from "./Components/chart-bar.jsx";
 import ChartAreaComponent from "./Components/chart-area.jsx";
-import Footer from './Components/footer.jsx'
+import Footer from "./Components/footer.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Nav from './Components/nav.jsx'
-import SideNav from './Components/sidenav.jsx'
+import Nav from "./Components/nav.jsx";
 import {
   faTable,
   faAngleRight,
@@ -15,12 +14,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
-
-
+const [sideNavToggle, setSideNavToggle] = useState(false);
   return (
-    <main className="sb-nav-fixed">
-      <Nav />
-      <SideNav/>
+    <main className={`sb-nav-fixed ${sideNavToggle && "sb-sidenav-toggled"}`}>
+      <Nav commonNav={sideNavToggle} commonNavFunc={setSideNavToggle} />
       <div id="layoutSidenav">
         <div id="layoutSidenav_content">
           <main>
@@ -126,7 +123,7 @@ export default function Home() {
               </div>
             </div>
           </main>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     </main>

@@ -3,17 +3,12 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSearch,
-  faBars,
-  faUser,
   faTachometerAlt,
   faColumns,
   faAngleDown,
   faBookOpen,
   faTable,
-  faAngleRight,
   faChartArea,
-  faChartBar,
 } from "@fortawesome/free-solid-svg-icons";
 
 const sidenav = () => {

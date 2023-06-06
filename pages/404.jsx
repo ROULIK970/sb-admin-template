@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import "../app/globals.css";
-import Footer from '../app/Components/footer.jsx'
+import Footer from '../app/Components/footer.jsx';
 
 const Err404 = () => {
   return (

@@ -7,7 +7,6 @@ import ChartAreaComponent from "../app/Components/chart-area.jsx";
 import ChartBarComponent from "../app/Components/chart-bar.jsx";
 import Footer from '../app/Components/footer.jsx'
 import Nav from "../app/Components/nav.jsx";
-import SideNav from '../app/Components/sidenav.jsx'
 import {
   Chart,
   CategoryScale,
@@ -64,7 +63,6 @@ const charts = () => {
   return (
     <div className="sb-nav-fixed">
       <Nav />
-      <SideNav />
       <div id="layoutSidenav">
         <div id="layoutSidenav_content">
           <main>
